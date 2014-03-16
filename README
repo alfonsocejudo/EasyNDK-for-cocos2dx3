@@ -11,7 +11,12 @@ project page.
 
 The sample Cocos2d-x project included in this repo will illustrate how
 to set up the directories and get communication between your game and
-the native Java/Obj-C environment up and running quickly. The project
-was created with the Cocos2d-x v3.0 RC0 console. The included jansson
-library has been modified to successfully build with Android.
+the native Java/Obj-C environment up and running quickly. The included
+jansson library has been modified to successfully build with Android.
+
+The project was created with the Cocos2d-x v3.0 RC0 console. If you
+clone this repo and want to build and run the sample project, you
+will have to manually copy the "cocos2d" directory that usually gets
+copied while running the cocos project creator into the
+"EasyNDKSample" project.
 
