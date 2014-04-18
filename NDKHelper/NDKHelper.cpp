@@ -159,14 +159,18 @@ void NDKHelper::handleMessage(json_t *methodName, json_t *methodParams)
             Value value = NDKHelper::getValueFromJson(methodParams);
             
             FuncNV sel = NDKHelper::selectorList[i].getSelector();
-            Node *target = NDKHelper::selectorList[i].getTarget();
+            // there is no need target to call back
+            //Node *target = NDKHelper::selectorList[i].getTarget();
             
             CallFuncNV *caller = CallFuncNV::create(sel);
             caller->setValue(value);
             
-            FiniteTimeAction *action = Sequence::create(caller, NULL);
-            
-            target->runAction(action);
+            // in some case this code is not runable
+            //FiniteTimeAction *action = Sequence::create(caller, NULL);
+            //target->runAction(action);
+            // so we just call execute() function
+            caller->execute();
+
             
             break;
         }
