@@ -40,15 +40,9 @@ void NDKHelper::removeSelectorsInGroup(const char *groupName)
         }
     }
     
-    for (unsigned int i = 0; i < markedIndices.size(); ++i) {
-        NDKHelper::removeAtIndex(markedIndices[i]);
+    for (long i = markedIndices.size() - 1; i >= 0; --i) {
+        NDKHelper::selectorList.erase(NDKHelper::selectorList.begin() + markedIndices[i]);
     }
-}
-
-void NDKHelper::removeAtIndex(int index)
-{
-    NDKHelper::selectorList[index] = NDKHelper::selectorList.back();
-    NDKHelper::selectorList.pop_back();
 }
 
 Value NDKHelper::getValueFromJson(json_t *obj)
@@ -164,9 +158,13 @@ void NDKHelper::handleMessage(json_t *methodName, json_t *methodParams)
             CallFuncNV *caller = CallFuncNV::create(sel);
             caller->setValue(value);
             
-            FiniteTimeAction *action = Sequence::create(caller, NULL);
-            
-            target->runAction(action);
+            if (target) {
+                FiniteTimeAction *action = Sequence::create(caller, NULL);
+                
+                target->runAction(action);
+            } else {
+                caller->execute();
+            }
             
             break;
         }
@@ -174,24 +172,41 @@ void NDKHelper::handleMessage(json_t *methodName, json_t *methodParams)
 }
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    #include "../../cocos2d/cocos/2d/platform/android/jni/JniHelper.h"
-    #include <android/log.h>
-    #include <jni.h>
+#include "../../cocos2d/cocos/2d/platform/android/jni/JniHelper.h"
+#include <android/log.h>
+#include <jni.h>
 
-    #define LOG_TAG    "EasyNDK-for-cocos2dx"
-    #define CLASS_NAME "com/easyndk/classes/AndroidNDKHelper"
+#define LOG_TAG    "EasyNDK-for-cocos2dx"
+#define CLASS_NAME "com/easyndk/classes/AndroidNDKHelper"
 #endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
-    #import "IOSNDKHelper-C-Interface.h"
+#import "IOSNDKHelper-C-Interface.h"
 #endif
 
 extern "C"
 {
-    #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
     // Method for receiving NDK messages from Java, Android
     void Java_com_easyndk_classes_AndroidNDKHelper_CPPNativeCallHandler(JNIEnv *env, jobject thiz, jstring json) {
-        std::string jsonString = JniHelper::jstring2string(json);
+        /* The JniHelper call resulted in crash, so copy the jstring2string method here */
+        //std::string jsonString = JniHelper::jstring2string(json);
+        if (json == NULL) {
+            return;
+        }
+        
+        JNIEnv *pEnv = JniHelper::getEnv();
+        if (!env) {
+            return;
+        }
+        
+        const char *chars = env->GetStringUTFChars(json, NULL);
+        std::string ret(chars);
+        env->ReleaseStringUTFChars(json, chars);
+        
+        std::string jsonString = ret;
+        /* End jstring2string code */
+        
         const char *jsonCharArray = jsonString.c_str();
         
         json_error_t error;
@@ -213,7 +228,7 @@ extern "C"
         NDKHelper::handleMessage(jsonMethodName, jsonMethodParams);
         json_decref(root);
     }
-    #endif
+#endif
     
     // Method for sending message from CPP to the targeted platform
     void sendMessageWithParams(std::string methodName, Value methodParams) {
@@ -230,7 +245,7 @@ extern "C"
             json_object_set_new(toBeSentJson, __CALLED_METHOD_PARAMS__, paramsJson);
         }
         
-        #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
         JniMethodInfo t;
         
 		if (JniHelper::getStaticMethodInfo(t,
@@ -246,9 +261,9 @@ extern "C"
             t.env->DeleteLocalRef(stringArg1);
 			t.env->DeleteLocalRef(t.classID);
 		}
-        #endif
+#endif
         
-        #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
         json_t *jsonMessageName = json_string(methodName.c_str());
         
         if (!methodParams.isNull()) {
@@ -262,7 +277,7 @@ extern "C"
         }
         
         json_decref(jsonMessageName);
-        #endif
+#endif
         
         json_decref(toBeSentJson);
     }

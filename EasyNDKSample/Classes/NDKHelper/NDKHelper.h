@@ -28,7 +28,6 @@ public:
     
 private:
     static std::vector<NDKCallbackNode> selectorList;
-    static void removeAtIndex(int index);
 };
 
 extern "C"

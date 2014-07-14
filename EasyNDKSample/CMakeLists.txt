@@ -58,6 +58,7 @@ include_directories(
   ${COCOS2D_ROOT}/cocos/2d/platform/desktop
   ${COCOS2D_ROOT}/cocos/2d/platform/linux
   ${COCOS2D_ROOT}/cocos/base
+  ${COCOS2D_ROOT}/cocos/deprecated
   ${COCOS2D_ROOT}/cocos/physics
   ${COCOS2D_ROOT}/cocos/editor-support
   ${COCOS2D_ROOT}/cocos/math/kazmath
@@ -74,6 +75,7 @@ include_directories(
   ${COCOS2D_ROOT}/external/websockets/include/linux
   ${COCOS2D_ROOT}/external/spidermonkey/include/linux
   ${COCOS2D_ROOT}/external/linux-specific/fmod/include/${ARCH_DIR}
+  ${COCOS2D_ROOT}/external/xxhash
 )
 
 link_directories(
@@ -104,6 +106,9 @@ add_subdirectory(${COCOS2D_ROOT}/external/tinyxml2)
 
 # audio
 add_subdirectory(${COCOS2D_ROOT}/cocos/audio)
+
+# xxhash library
+add_subdirectory(${COCOS2D_ROOT}/external/xxhash)
 
 # cocos base library
 add_subdirectory(${COCOS2D_ROOT}/cocos/base)

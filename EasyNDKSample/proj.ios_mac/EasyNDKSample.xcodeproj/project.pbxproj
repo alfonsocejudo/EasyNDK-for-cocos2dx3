@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		004DDB2F18D52A6200B7D291 /* dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB1F18D52A6200B7D291 /* dump.c */; };
-		004DDB3018D52A6200B7D291 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2018D52A6200B7D291 /* error.c */; };
-		004DDB3118D52A6200B7D291 /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2118D52A6200B7D291 /* hashtable.c */; };
-		004DDB3218D52A6200B7D291 /* load.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2618D52A6200B7D291 /* load.c */; };
-		004DDB3318D52A6200B7D291 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2718D52A6200B7D291 /* memory.c */; };
-		004DDB3418D52A6200B7D291 /* pack_unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2818D52A6200B7D291 /* pack_unpack.c */; };
-		004DDB3518D52A6200B7D291 /* strbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2918D52A6200B7D291 /* strbuffer.c */; };
-		004DDB3618D52A6200B7D291 /* strconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2B18D52A6200B7D291 /* strconv.c */; };
-		004DDB3718D52A6200B7D291 /* utf.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2C18D52A6200B7D291 /* utf.c */; };
-		004DDB3818D52A6200B7D291 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 004DDB2E18D52A6200B7D291 /* value.c */; };
-		00AEC6C018D44ED60045E5F3 /* CallFuncNV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00AEC6B018D44ED60045E5F3 /* CallFuncNV.cpp */; };
-		00AEC6C118D44ED60045E5F3 /* NDKCallbackNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00AEC6B218D44ED60045E5F3 /* NDKCallbackNode.cpp */; };
-		00AEC6C218D44ED60045E5F3 /* NDKHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00AEC6B418D44ED60045E5F3 /* NDKHelper.cpp */; };
-		00AEC6C718D44EE20045E5F3 /* IOSNDKHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00AEC6C618D44EE20045E5F3 /* IOSNDKHelper.mm */; };
+		00EEC34919736CED003FA784 /* dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33219736CED003FA784 /* dump.c */; };
+		00EEC34A19736CED003FA784 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33319736CED003FA784 /* error.c */; };
+		00EEC34B19736CED003FA784 /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33419736CED003FA784 /* hashtable.c */; };
+		00EEC34C19736CED003FA784 /* load.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33919736CED003FA784 /* load.c */; };
+		00EEC34D19736CED003FA784 /* memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33A19736CED003FA784 /* memory.c */; };
+		00EEC34E19736CED003FA784 /* pack_unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33B19736CED003FA784 /* pack_unpack.c */; };
+		00EEC34F19736CED003FA784 /* strbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33C19736CED003FA784 /* strbuffer.c */; };
+		00EEC35019736CED003FA784 /* strconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33E19736CED003FA784 /* strconv.c */; };
+		00EEC35119736CED003FA784 /* utf.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC33F19736CED003FA784 /* utf.c */; };
+		00EEC35219736CED003FA784 /* value.c in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC34119736CED003FA784 /* value.c */; };
+		00EEC35319736CED003FA784 /* CallFuncNV.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC34319736CED003FA784 /* CallFuncNV.cpp */; };
+		00EEC35419736CED003FA784 /* NDKCallbackNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC34519736CED003FA784 /* NDKCallbackNode.cpp */; };
+		00EEC35519736CED003FA784 /* NDKHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC34719736CED003FA784 /* NDKHelper.cpp */; };
+		00EEC35C19736CF7003FA784 /* IOSNDKHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00EEC35B19736CF7003FA784 /* IOSNDKHelper.mm */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -229,31 +229,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004DDB1F18D52A6200B7D291 /* dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dump.c; sourceTree = "<group>"; };
-		004DDB2018D52A6200B7D291 /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
-		004DDB2118D52A6200B7D291 /* hashtable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashtable.c; sourceTree = "<group>"; };
-		004DDB2218D52A6200B7D291 /* hashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashtable.h; sourceTree = "<group>"; };
-		004DDB2318D52A6200B7D291 /* jansson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson.h; sourceTree = "<group>"; };
-		004DDB2418D52A6200B7D291 /* jansson_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson_config.h; sourceTree = "<group>"; };
-		004DDB2518D52A6200B7D291 /* jansson_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson_private.h; sourceTree = "<group>"; };
-		004DDB2618D52A6200B7D291 /* load.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load.c; sourceTree = "<group>"; };
-		004DDB2718D52A6200B7D291 /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
-		004DDB2818D52A6200B7D291 /* pack_unpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pack_unpack.c; sourceTree = "<group>"; };
-		004DDB2918D52A6200B7D291 /* strbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strbuffer.c; sourceTree = "<group>"; };
-		004DDB2A18D52A6200B7D291 /* strbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strbuffer.h; sourceTree = "<group>"; };
-		004DDB2B18D52A6200B7D291 /* strconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strconv.c; sourceTree = "<group>"; };
-		004DDB2C18D52A6200B7D291 /* utf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf.c; sourceTree = "<group>"; };
-		004DDB2D18D52A6200B7D291 /* utf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf.h; sourceTree = "<group>"; };
-		004DDB2E18D52A6200B7D291 /* value.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
-		00AEC6B018D44ED60045E5F3 /* CallFuncNV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CallFuncNV.cpp; sourceTree = "<group>"; };
-		00AEC6B118D44ED60045E5F3 /* CallFuncNV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallFuncNV.h; sourceTree = "<group>"; };
-		00AEC6B218D44ED60045E5F3 /* NDKCallbackNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDKCallbackNode.cpp; sourceTree = "<group>"; };
-		00AEC6B318D44ED60045E5F3 /* NDKCallbackNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDKCallbackNode.h; sourceTree = "<group>"; };
-		00AEC6B418D44ED60045E5F3 /* NDKHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDKHelper.cpp; sourceTree = "<group>"; };
-		00AEC6B518D44ED60045E5F3 /* NDKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDKHelper.h; sourceTree = "<group>"; };
-		00AEC6C418D44EE20045E5F3 /* IOSNDKHelper-C-Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOSNDKHelper-C-Interface.h"; sourceTree = "<group>"; };
-		00AEC6C518D44EE20045E5F3 /* IOSNDKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSNDKHelper.h; sourceTree = "<group>"; };
-		00AEC6C618D44EE20045E5F3 /* IOSNDKHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IOSNDKHelper.mm; sourceTree = "<group>"; };
+		00EEC33219736CED003FA784 /* dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dump.c; sourceTree = "<group>"; };
+		00EEC33319736CED003FA784 /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
+		00EEC33419736CED003FA784 /* hashtable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashtable.c; sourceTree = "<group>"; };
+		00EEC33519736CED003FA784 /* hashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashtable.h; sourceTree = "<group>"; };
+		00EEC33619736CED003FA784 /* jansson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson.h; sourceTree = "<group>"; };
+		00EEC33719736CED003FA784 /* jansson_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson_config.h; sourceTree = "<group>"; };
+		00EEC33819736CED003FA784 /* jansson_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jansson_private.h; sourceTree = "<group>"; };
+		00EEC33919736CED003FA784 /* load.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = load.c; sourceTree = "<group>"; };
+		00EEC33A19736CED003FA784 /* memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory.c; sourceTree = "<group>"; };
+		00EEC33B19736CED003FA784 /* pack_unpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pack_unpack.c; sourceTree = "<group>"; };
+		00EEC33C19736CED003FA784 /* strbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strbuffer.c; sourceTree = "<group>"; };
+		00EEC33D19736CED003FA784 /* strbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strbuffer.h; sourceTree = "<group>"; };
+		00EEC33E19736CED003FA784 /* strconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strconv.c; sourceTree = "<group>"; };
+		00EEC33F19736CED003FA784 /* utf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf.c; sourceTree = "<group>"; };
+		00EEC34019736CED003FA784 /* utf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf.h; sourceTree = "<group>"; };
+		00EEC34119736CED003FA784 /* value.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = value.c; sourceTree = "<group>"; };
+		00EEC34319736CED003FA784 /* CallFuncNV.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CallFuncNV.cpp; sourceTree = "<group>"; };
+		00EEC34419736CED003FA784 /* CallFuncNV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallFuncNV.h; sourceTree = "<group>"; };
+		00EEC34519736CED003FA784 /* NDKCallbackNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDKCallbackNode.cpp; sourceTree = "<group>"; };
+		00EEC34619736CED003FA784 /* NDKCallbackNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDKCallbackNode.h; sourceTree = "<group>"; };
+		00EEC34719736CED003FA784 /* NDKHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NDKHelper.cpp; sourceTree = "<group>"; };
+		00EEC34819736CED003FA784 /* NDKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDKHelper.h; sourceTree = "<group>"; };
+		00EEC35919736CF7003FA784 /* IOSNDKHelper-C-Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IOSNDKHelper-C-Interface.h"; sourceTree = "<group>"; };
+		00EEC35A19736CF7003FA784 /* IOSNDKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSNDKHelper.h; sourceTree = "<group>"; };
+		00EEC35B19736CF7003FA784 /* IOSNDKHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IOSNDKHelper.mm; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -357,50 +357,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		004DDB1E18D52A6200B7D291 /* jansson */ = {
+		00EEC33119736CED003FA784 /* jansson */ = {
 			isa = PBXGroup;
 			children = (
-				004DDB1F18D52A6200B7D291 /* dump.c */,
-				004DDB2018D52A6200B7D291 /* error.c */,
-				004DDB2118D52A6200B7D291 /* hashtable.c */,
-				004DDB2218D52A6200B7D291 /* hashtable.h */,
-				004DDB2318D52A6200B7D291 /* jansson.h */,
-				004DDB2418D52A6200B7D291 /* jansson_config.h */,
-				004DDB2518D52A6200B7D291 /* jansson_private.h */,
-				004DDB2618D52A6200B7D291 /* load.c */,
-				004DDB2718D52A6200B7D291 /* memory.c */,
-				004DDB2818D52A6200B7D291 /* pack_unpack.c */,
-				004DDB2918D52A6200B7D291 /* strbuffer.c */,
-				004DDB2A18D52A6200B7D291 /* strbuffer.h */,
-				004DDB2B18D52A6200B7D291 /* strconv.c */,
-				004DDB2C18D52A6200B7D291 /* utf.c */,
-				004DDB2D18D52A6200B7D291 /* utf.h */,
-				004DDB2E18D52A6200B7D291 /* value.c */,
+				00EEC33219736CED003FA784 /* dump.c */,
+				00EEC33319736CED003FA784 /* error.c */,
+				00EEC33419736CED003FA784 /* hashtable.c */,
+				00EEC33519736CED003FA784 /* hashtable.h */,
+				00EEC33619736CED003FA784 /* jansson.h */,
+				00EEC33719736CED003FA784 /* jansson_config.h */,
+				00EEC33819736CED003FA784 /* jansson_private.h */,
+				00EEC33919736CED003FA784 /* load.c */,
+				00EEC33A19736CED003FA784 /* memory.c */,
+				00EEC33B19736CED003FA784 /* pack_unpack.c */,
+				00EEC33C19736CED003FA784 /* strbuffer.c */,
+				00EEC33D19736CED003FA784 /* strbuffer.h */,
+				00EEC33E19736CED003FA784 /* strconv.c */,
+				00EEC33F19736CED003FA784 /* utf.c */,
+				00EEC34019736CED003FA784 /* utf.h */,
+				00EEC34119736CED003FA784 /* value.c */,
 			);
 			name = jansson;
 			path = ../Classes/jansson;
 			sourceTree = "<group>";
 		};
-		00AEC6AF18D44ED60045E5F3 /* NDKHelper */ = {
+		00EEC34219736CED003FA784 /* NDKHelper */ = {
 			isa = PBXGroup;
 			children = (
-				00AEC6B018D44ED60045E5F3 /* CallFuncNV.cpp */,
-				00AEC6B118D44ED60045E5F3 /* CallFuncNV.h */,
-				00AEC6B218D44ED60045E5F3 /* NDKCallbackNode.cpp */,
-				00AEC6B318D44ED60045E5F3 /* NDKCallbackNode.h */,
-				00AEC6B418D44ED60045E5F3 /* NDKHelper.cpp */,
-				00AEC6B518D44ED60045E5F3 /* NDKHelper.h */,
+				00EEC34319736CED003FA784 /* CallFuncNV.cpp */,
+				00EEC34419736CED003FA784 /* CallFuncNV.h */,
+				00EEC34519736CED003FA784 /* NDKCallbackNode.cpp */,
+				00EEC34619736CED003FA784 /* NDKCallbackNode.h */,
+				00EEC34719736CED003FA784 /* NDKHelper.cpp */,
+				00EEC34819736CED003FA784 /* NDKHelper.h */,
 			);
 			name = NDKHelper;
 			path = ../Classes/NDKHelper;
 			sourceTree = "<group>";
 		};
-		00AEC6C318D44EE20045E5F3 /* IOSNDKHelper */ = {
+		00EEC35819736CF7003FA784 /* IOSNDKHelper */ = {
 			isa = PBXGroup;
 			children = (
-				00AEC6C418D44EE20045E5F3 /* IOSNDKHelper-C-Interface.h */,
-				00AEC6C518D44EE20045E5F3 /* IOSNDKHelper.h */,
-				00AEC6C618D44EE20045E5F3 /* IOSNDKHelper.mm */,
+				00EEC35919736CF7003FA784 /* IOSNDKHelper-C-Interface.h */,
+				00EEC35A19736CF7003FA784 /* IOSNDKHelper.h */,
+				00EEC35B19736CF7003FA784 /* IOSNDKHelper.mm */,
 			);
 			name = IOSNDKHelper;
 			path = ios/IOSNDKHelper;
@@ -410,7 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				5087E77117EB970100C73F5D /* Icons */,
-				00AEC6C318D44EE20045E5F3 /* IOSNDKHelper */,
+				00EEC35819736CF7003FA784 /* IOSNDKHelper */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
 				503AE0FC17EB989F00D1A890 /* main.m */,
@@ -425,8 +425,8 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				004DDB1E18D52A6200B7D291 /* jansson */,
-				00AEC6AF18D44ED60045E5F3 /* NDKHelper */,
+				00EEC33119736CED003FA784 /* jansson */,
+				00EEC34219736CED003FA784 /* NDKHelper */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
@@ -758,25 +758,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				004DDB3318D52A6200B7D291 /* memory.c in Sources */,
-				004DDB3218D52A6200B7D291 /* load.c in Sources */,
+				00EEC35219736CED003FA784 /* value.c in Sources */,
+				00EEC34E19736CED003FA784 /* pack_unpack.c in Sources */,
+				00EEC34B19736CED003FA784 /* hashtable.c in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
-				00AEC6C118D44ED60045E5F3 /* NDKCallbackNode.cpp in Sources */,
+				00EEC35419736CED003FA784 /* NDKCallbackNode.cpp in Sources */,
+				00EEC34F19736CED003FA784 /* strbuffer.c in Sources */,
+				00EEC34D19736CED003FA784 /* memory.c in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				00EEC35119736CED003FA784 /* utf.c in Sources */,
+				00EEC34A19736CED003FA784 /* error.c in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
-				004DDB2F18D52A6200B7D291 /* dump.c in Sources */,
-				004DDB3018D52A6200B7D291 /* error.c in Sources */,
-				004DDB3818D52A6200B7D291 /* value.c in Sources */,
-				004DDB3718D52A6200B7D291 /* utf.c in Sources */,
-				00AEC6C718D44EE20045E5F3 /* IOSNDKHelper.mm in Sources */,
-				004DDB3418D52A6200B7D291 /* pack_unpack.c in Sources */,
-				004DDB3118D52A6200B7D291 /* hashtable.c in Sources */,
-				00AEC6C018D44ED60045E5F3 /* CallFuncNV.cpp in Sources */,
+				00EEC35C19736CF7003FA784 /* IOSNDKHelper.mm in Sources */,
+				00EEC35319736CED003FA784 /* CallFuncNV.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
-				004DDB3618D52A6200B7D291 /* strconv.c in Sources */,
-				00AEC6C218D44ED60045E5F3 /* NDKHelper.cpp in Sources */,
-				004DDB3518D52A6200B7D291 /* strbuffer.c in Sources */,
+				00EEC34C19736CED003FA784 /* load.c in Sources */,
+				00EEC35019736CED003FA784 /* strconv.c in Sources */,
+				00EEC34919736CED003FA784 /* dump.c in Sources */,
+				00EEC35519736CED003FA784 /* NDKHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
